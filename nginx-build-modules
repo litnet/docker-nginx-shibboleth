@@ -1,0 +1,10 @@
+[nginx-http-shibboleth]
+form=git
+url=https://github.com/nginx-shib/nginx-http-shibboleth.git
+dynamic=true
+
+[headers-more-nginx-module]
+form=git
+url=https://github.com/openresty/headers-more-nginx-module.git
+dynamic=true
+
