@@ -1,6 +1,6 @@
 FROM debian:latest
 
-ENV NGINX_VERSION="1.11.1" NGINX_BUILDER_VERSION="0.9.15"
+ENV NGINX_VERSION="1.13.3" NGINX_BUILDER_VERSION="0.11.0"
 
 RUN apt-get -y update && \
     apt-get -y --no-install-recommends --no-install-suggests install \
@@ -10,7 +10,8 @@ RUN apt-get -y update && \
             gcc \
             make \
             libpcre3-dev \
-            libssl-dev && \
+            libssl-dev \
+            zlib1g-dev && \
     mkdir /nginx-build &&  cd /nginx-build
 
 RUN  cd /nginx-build && \
